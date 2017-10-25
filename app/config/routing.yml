@@ -1,0 +1,17 @@
+#acme_api:
+#    resource: "@ApiBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+# app/config/routing.yml
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+ApiBundle:
+    resource: "@ApiBundle/Resources/config/routing.yml"
+    prefix:   /api
+
+fos_oauth_server_token:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"

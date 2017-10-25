@@ -1,0 +1,7 @@
+api_homepage:
+    path:     /
+    defaults: { _controller: ApiBundle:Default:index }
+api_demos:
+    type: rest
+    prefix: /api
+    resource: ApiBundle\Controller\DemoController
